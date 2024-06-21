@@ -1,11 +1,17 @@
+# Thiết lập ký tự kết thúc dòng cho tất cả các tệp
 * text=auto eol=lf
 
+# Định nghĩa các quy tắc diff cụ thể cho từng loại tệp
 *.blade.php diff=html
 *.css diff=css
 *.html diff=html
 *.md diff=markdown
 *.php diff=php
 
+# Các tệp và thư mục không được xuất
 /.github export-ignore
 CHANGELOG.md export-ignore
 .styleci.yml export-ignore
+
+# Đảm bảo tất cả các tệp sử dụng LF cho ký tự kết thúc dòng
+* text eol=lf
